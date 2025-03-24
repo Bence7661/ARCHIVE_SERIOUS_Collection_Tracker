@@ -27,7 +27,6 @@ Here you see all of your collection items that you've taken an inventory for pre
 - Disassembling an item will automatically delete the entry for you after a map change.
 
 # Planned features
-- Disassembly: Honestly this might actually delete the inventory entry at some point. Will further test it.
 - Batch inventory taking: You'll be able to just take an inventory not of a whole stash of stuff with just the click of 1-2 buttons.
 - Duplicate item types will not be registered??? I'll think about best approach here. Maybe you want to overwrite it.
 - An image for the PDA notes part.
