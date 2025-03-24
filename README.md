@@ -8,7 +8,7 @@ You're out on the field. You have some important stuff on you. Almost encumbered
 You fight a group of enemies and find some incredible looking equipment. Then you start to wonder.  
 - Do I already have this at home?
 - I should just take it in case I need it for my collection.
-- Damn I'm too encumbered. Newermind let's just walk home nice and slow.
+- Damn I'm too encumbered. Nevermind let's just walk home nice and slow.
 
 Then you get home open up your trusty/dusty stash and realize that all the items you painstakingly carried for your collection are already present.  
 Well no more!  
