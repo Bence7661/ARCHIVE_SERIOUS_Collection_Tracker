@@ -1,7 +1,7 @@
 # Collection Tracker
 v0.1.0  
   
-You're an avid collector? You like to jam loot in a stash and just let it collect dust as the memory of it fades?  
+Are you an avid collector? You like to jam loot in a stash and just let it collect dust as the memory of it fades?  
   
 Imagine this horrible scenario:  
 You're out on the field. You have some important stuff on you. Almost encumbered.  
