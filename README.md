@@ -24,6 +24,7 @@ Here you see all of your collection items that you've taken an inventory for pre
 - Dropping an item will mark the entry for deletion. If you don't pick it up and leave the map the entry will automatically be deleted for you.
 - Putting stuff in a stash. If you taken inventory of it then it will be safe even on map changes etc.
 - You can right click stuff even if it's in your stashes and it will get registered into the collection.
+- Disassembling an item will automatically delete the entry for you after a map change.
 
 # Planned features
 - Disassembly: Honestly this might actually delete the inventory entry at some point. Will further test it.
