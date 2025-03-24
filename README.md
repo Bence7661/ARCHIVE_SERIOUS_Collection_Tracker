@@ -14,7 +14,7 @@ Then you get home open up your trusty/dusty stash and realize that all the items
 Well no more!  
 
 With this mod you can right click any weapon/armor and either log it into your collection or remove from it.  
-When you're out on the field and unsure if you have an item you can just take out your pda.  
+When you're out on the field and unsure if you have an item you can just take out your PDA.  
 **Guide -> Notes -> Equipment Inventory.**  
 Here you see all of your collection items that you've taken an inventory for previously.
 
