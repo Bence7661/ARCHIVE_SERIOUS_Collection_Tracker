@@ -28,8 +28,10 @@ Here you see all of your collection items that you've taken an inventory for pre
 # Planned features
 - Disassembly: Honestly this might actually delete the inventory entry at some point. Will further test it.
 - Batch inventory taking: You'll be able to just take an inventory not of a whole stash of stuff with just the click of 1-2 buttons.
+- Duplicate item types will not be registered??? I'll think about best approach here. Maybe you want to overwrite it.
 - An image for the PDA notes part.
 - Putting on a scope/taking it off will delete the inventory entry (Attaching/Detaching scopes spawn in a new gun. This is a known thing since ages.)
+- PDA notification when you take an item that's registered in your collection inventory???
 - **MCM options**:
   - **Lean entries**: The inventory entries won't contain the parts and conditions of the object.
   - **Delete all data**: Deletes all saved entry data (accross saves)
