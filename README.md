@@ -18,6 +18,9 @@ When you're out on the field and unsure if you have an item you can just take ou
 **Guide -> Notes -> Equipment Inventory.**  
 Here you see all of your collection items that you've taken an inventory for previously.
 
+# Installation
+Priority should be higher than the priority of `287- G.A.M.M.A. Massive Text Overhaul Project - SageDaHerb and Dr.Pr1nkos`
+
 # Features
 - Saving game saves your registered inventory entries.
 - Selling an item (yes it's impossible to sell a weapon/BLACK MARKET) will automatically delete the entry for you.
