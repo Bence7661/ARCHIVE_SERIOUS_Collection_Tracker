@@ -28,14 +28,32 @@ Priority should be higher than the priority of `287- G.A.M.M.A. Massive Text Ove
 - Putting stuff in a stash. If you taken inventory of it then it will be safe even on map changes etc.
 - You can right click stuff even if it's in your stashes and it will get registered into the collection.
 - Disassembling an item will automatically delete the entry for you after a map change.
+- Duplicate item types: You can choose to overwrite the already existing inventory entry with the new item.
+- Adding/Removing scope from weapon won't unregister your collection inventory entry.
+- Hovering over an item will can tell you the following:
+  - Is this exact item registered?
+  - Is this type of item registered?
+  - Item not registered?
+ 
+![image](https://github.com/user-attachments/assets/5448e6b2-7b41-470d-965c-947916672c16)
+
+
+This needs more space to explain all aspects:  
+**Batch inventory registering**: If a stash is open a new option will appear on items `batch inventory`.  
+When you press it the **Collection Tracker** will register every item in the stash automatically.  
+
+If the **Collection Tracker** encounters multiple items of same type (same BRN-180 for example). It will register the one that's in the best condition overall.  
+Now this condition calculation is the following: Sum of parts condition + Median of parts condition.  
+This way if there're 2 similar condition items: 
+- [1%, 1%, 1%, 1%, 100%]    - Sum is: 105  Median = 1  Final sum: 106
+- [10%, 25%, 5%, 40%, 17%]  - sum is: 97   Median = 17 Final sum: 114  
+The one with the better distribution of parts condition will be registered.
+
+- **MCM options**:
+  - **Slim entries**: The inventory entries won't contain the parts and conditions of the object.
+  - **Display general item condition**: General item condition will be shown next to the item's name (except firearms)
+  - **Dele data**: Deletes all saved entry data (for current save only).
 
 # Planned features
-- Batch inventory taking: You'll be able to just take an inventory not of a whole stash of stuff with just the click of 1-2 buttons.
-- Duplicate item types will not be registered??? I'll think about best approach here. Maybe you want to overwrite it.
 - An image for the PDA notes part.
-- Putting on a scope/taking it off will delete the inventory entry (Attaching/Detaching scopes spawn in a new gun. This is a known thing since ages.)
-- PDA notification when you take an item that's registered in your collection inventory???
-- **MCM options**:
-  - **Lean entries**: The inventory entries won't contain the parts and conditions of the object.
-  - **Delete all data**: Deletes all saved entry data (accross saves)
-  - **Dele data**: Deletes all saved entry data (for current save only)
+
