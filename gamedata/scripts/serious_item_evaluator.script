@@ -1,0 +1,53 @@
+local function GetMedian(numbers)
+    if #numbers == 0 then
+        return 0
+    end
+
+    table.sort(numbers)
+    local mid = math.floor(#numbers / 2 + 0.5)
+
+    if #numbers % 2 == 1 then
+        return numbers[mid + 1]
+    else
+        return math.floor((numbers[mid] + numbers[mid + 1]) / 2 + 0.5)
+    end
+end
+
+function EvaluateItemCondition(obj)
+    local score = -1
+    local partCnt = 0
+    local condList = {}
+    local objParts = obj and item_parts.get_parts_con(obj) or nil
+
+    if not obj then return score end
+    if not objParts then return obj:condition() end
+
+    for prtName, cond in pairs(objParts) do
+        local uiPartName = ui_item.get_sec_name(prtName)
+        if uiPartName ~= ui_item.get_sec_name(obj:section()) then
+            score = score + cond
+            partCnt = partCnt + 1
+            table.insert(condList, cond)
+        end
+    end
+    
+    score = score + GetMedian(condList)
+    return score
+end
+
+-- Returns: <obj>, <bool>
+function ReturnTheBetterOne(itemA, itemB)
+    if not itemA and not itemB then return nil, false end
+    if not itemA then return itemB, false end
+    if not itemB then return itemA, false end
+    if itemA:id() == itemB:id() then return itemA, true end
+
+    local itemAScore = EvaluateItemCondition(itemA)
+    local itemBScore = EvaluateItemCondition(itemB)
+
+    if itemAScore < itemBScore then
+        return itemB, false
+    end
+
+    return itemA, false
+end
