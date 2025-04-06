@@ -1,5 +1,5 @@
 # Collection Tracker
-v1.0.0  
+v1.1.0  
   
 Are you an avid collector? You like to jam loot in a stash and just let it collect dust as the memory of it fades?  
   
@@ -52,7 +52,8 @@ The one with the better distribution of parts condition will be registered.
 - **MCM options**:
   - **Slim entries**: The inventory entries won't contain the parts and conditions of the object.
   - **Display general item condition**: General item condition will be shown next to the item's name (except firearms)
-  - **Dele data**: Deletes all saved entry data (for current save only).
+  - **Delete all inventory entries for the currently loaded save**: Deletes all saved entry data (for current save only).
+  - **Update data structure**: Performs an update on the data of the PDA inventory entries.
 
 # Planned features
 - An image for the PDA notes part.
