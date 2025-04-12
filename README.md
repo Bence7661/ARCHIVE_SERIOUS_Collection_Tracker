@@ -1,5 +1,5 @@
 # Collection Tracker
-v1.1.0  
+v1.1.2  
   
 Are you an avid collector? You like to jam loot in a stash and just let it collect dust as the memory of it fades?  
   
